@@ -68,7 +68,6 @@ const Navbar = () => {
         </svg>
       </button>
 
-      {/* Mobile Menu (logique ajoutée sans casser ton design) */}
       {/* Overlay */}
       {isOpen && (
         <div
@@ -108,5 +107,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
