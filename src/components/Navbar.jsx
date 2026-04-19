@@ -125,7 +125,7 @@ const Navbar = () => {
           onClick={toggleDarkMode}
           className="
           p-2 rounded-full bg-white/20 
-          dark:bg-black/30text-indigo-900 
+          dark:bg-black/30 text-indigo-900 
           dark:text-white hover:scale-110 transition
           "
         >

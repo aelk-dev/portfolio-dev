@@ -1,19 +1,25 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div
-      className="
+    <>
+      <div
+        className="
       min-h-screen bg-linear-to-br 
       from-purple-400 via-fuchsia-200 
-      to-fuchsia-50 dark:from-purple-900 
-      dark:via-purple-500 dark:to-gray-800 
+      to-fuchsia-50 dark:from-gray-900 
+      dark:via-purple-950 dark:to-gray-900
       transition-colors
       "
-    >
-      <Navbar />
-    </div>
+      >
+        <Navbar />
+        <main className="relative z-10">
+          <Hero />
+        </main>
+      </div>
+    </>
   );
 };
 
