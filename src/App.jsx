@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Navbar from "./components/Layout/Navigation/Navbar";
+import Hero from "./components/Home/Hero";
 
 const App = () => {
   return (

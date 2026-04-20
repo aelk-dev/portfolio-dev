@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Sun, Moon, Download } from "lucide-react";
-import logo from "../assets/icons8-hibiscus-64.png";
+import logo from "../../../assets/icons8-hibiscus-64.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
