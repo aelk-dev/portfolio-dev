@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Download } from "lucide-react";
 import logo from "../assets/icons8-hibiscus-64.png";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Tech Stack", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -78,7 +77,7 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <div
         className="
-        hidden md:flex items-center 
+        hidden lg:flex items-center 
         gap-6 lg:gap-10 text-sm font-bold 
         uppercase tracking-widest -ml-9
         "
@@ -105,8 +104,11 @@ const Navbar = () => {
         </button>
 
         <a
-          href="#hireme"
+          href="/CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
+          flex items-center gap-2
           bg-indigo-800 text-white 
           px-6 py-3 h-10 rounded-full 
           text-xs font-black uppercase 
@@ -115,11 +117,12 @@ const Navbar = () => {
           shadow-indigo-900/20 hover:-translate-y-0.5
           "
         >
-          Hire Me
+          <Download size={16} />
+          Resume
         </a>
       </div>
 
-      <div className="md:hidden flex items-center gap-3">
+      <div className="lg:hidden flex items-center gap-3">
         {/* Dark mode Button */}
         <button
           onClick={toggleDarkMode}
@@ -153,16 +156,16 @@ const Navbar = () => {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm lg:hidden"
           onClick={() => setOpen(false)}
         />
       )}
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-24 left-1/2 -translate-x-1/2 w-[92%] md:hidden
-        bg-linear-to-br from-fuchsia-300/30 via-rose-400/30 to-purple-500/30
-        backdrop-blur-3xl border border-white/30
+        className={`absolute top-24 left-1/2 -translate-x-1/2 w-[92%] lg:hidden
+        bg-linear-to-br from-fuchsia-300/90 via-rose-400/90 to-purple-500/90
+        backdrop-blur-3xl border border-white/90
         rounded-3xl p-8 shadow-2xl space-y-6
         transition-all duration-300 origin-top
         ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}
@@ -175,7 +178,7 @@ const Navbar = () => {
             className="
             block text-xl font-bold 
             text-indigo-950 dark:text-white 
-            hover:text-fuchsia-600 dark:hover:text-indigo-800 
+            hover:text-fuchsia-300 dark:hover:text-blue-600 
             transition text-center
             "
           >
@@ -184,16 +187,21 @@ const Navbar = () => {
         ))}
 
         <a
-          href="#hireme"
+          href="/CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={() => setOpen(false)}
-          className="block w-full text-center 
+          className="
+          flex items-center justify-center gap-2
+          w-full text-center 
           bg-indigo-900/90 text-white py-4 
           rounded-2xl font-black text-lg shadow-xl 
           hover:scale-105 active:scale-95 
           transition border border-white/10
           "
         >
-          Hire Me
+          <Download size={18} />
+          Resume
         </a>
       </div>
     </nav>
