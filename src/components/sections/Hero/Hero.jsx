@@ -7,18 +7,19 @@ const Hero = () => {
     <section
       id="home"
       className="
-      min-h-screen 
+      min-h-screen scroll-mt-32
       flex items-center justify-center 
       px-6 pt-32
       text-indigo-900 dark:text-white
       "
     >
-      <div className="
+      <div
+        className="
         max-w-6xl w-full 
         grid md:grid-cols-2 
         gap-10 items-center
-      ">
-        
+      "
+      >
         <div className="space-y-4 text-center md:text-left">
           <HeroText />
           <HeroButtons />
