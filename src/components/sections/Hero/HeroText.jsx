@@ -18,10 +18,8 @@ const HeroText = () => {
       </h1>
 
       <p className="mt-4 text-lg text-indigo-900/80 dark:text-white/80 max-w-md">
-        I’m a software developer who enjoys building full applications from
-        start to finish, including development, testing, and deployment. I like
-        working across different parts of a project and learning new areas like
-        DevOps, security, and software quality.
+        Full-stack developer focused on building modern, scalable and reliable
+        applications.
       </p>
     </>
   );

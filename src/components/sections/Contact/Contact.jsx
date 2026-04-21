@@ -1,9 +1,19 @@
 import SectionWrapper from "../../ui/SectionWrapper";
+import ContactInfo from "../Contact/ContactInfo";
+import ContactForm from "../Contact/ContactFrom";
 
 const Contact = () => {
   return (
     <SectionWrapper id="contact">
-      <h2 className="text-4xl font-bold">Contact Section</h2>
+      <div
+        className="
+        max-w-6xl w-full 
+        grid md:grid-cols-2 gap-12 items-start
+      "
+      >
+        <ContactInfo />
+        <ContactForm />
+      </div>
     </SectionWrapper>
   );
 };
