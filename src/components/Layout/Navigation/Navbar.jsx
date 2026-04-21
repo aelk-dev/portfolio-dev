@@ -1,107 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Sun, Moon, Download } from "lucide-react";
-import logo from "../../../assets/icons8-hibiscus-64.png";
-
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Tech Stack", href: "#skills" },
-  { label: "Contact", href: "#contact" },
-];
+import { useState } from "react";
+import { Download } from "lucide-react";
+import Logo from "./Logo";
+import NavLinks from "./NavLinks";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode((prev) => !prev);
-  };
-
   return (
-    <nav
-      className="
+    <nav className="
       fixed top-8 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 
       bg-linear-to-r from-fuchsia-300 via-rose-400 to-purple-500 
       backdrop-blur-2xl border border-white/20 px-8 h-20 rounded-full 
       flex items-center justify-between gap-12 shadow-2xl ring-1 ring-black/5
-      "
-    >
-      {/* Logo */}
-      <div className="px-4 sm:px-6 lg:px-3">
-        <Link to="/" className="flex items-center space-x-3 group">
-          <div
-            className="
-               w-14 h-14 rounded-xl 
-               bg-white/20 backdrop-blur-md 
-               flex items-center justify-center 
-               transition-all group-hover:rotate-12 
-               group-hover:scale-110
-               "
-          >
-            <img
-              src={logo}
-              alt="logo"
-              className="
-              h-12 w-12 object-contain 
-              transition-transform duration-300 
-              group-hover:rotate-12 group-hover:scale-110
-              "
-            />
-          </div>
-          <span
-            className="
-            text-2xl font-bold bg-linear-to-r 
-            from-black to-blue-800 
-            bg-clip-text text-transparent
-            "
-          >
-            FolioDev<span className="text-orange-600">.</span>
-          </span>
-        </Link>
-      </div>
+    ">
+      
+      <Logo />
 
-      {/* Desktop Nav */}
-      <div
-        className="
-        hidden lg:flex items-center 
-        gap-6 lg:gap-10 text-sm font-bold 
-        uppercase tracking-widest -ml-9
-        "
-      >
-        {navLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            className="
-            text-indigo-900 dark:text-white 
-            hover:text-fuchsia-300 dark:hover:text-blue-600 
-            font-semibold transition
-            "
-          >
-            {link.label}
-          </a>
-        ))}
+      {/* Desktop */}
+      <div className="hidden lg:flex items-center gap-6 lg:gap-10 text-sm font-bold uppercase tracking-widest -ml-9">
+        <NavLinks />
 
-        <button
-          onClick={toggleDarkMode}
-          className="p-2 rounded-full bg-white/20 text-white hover:scale-110 transition"
-        >
-          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        <ThemeToggle />
 
         <a
           href="/CV.pdf"
@@ -122,33 +42,14 @@ const Navbar = () => {
         </a>
       </div>
 
+      {/* Mobile */}
       <div className="lg:hidden flex items-center gap-3">
-        {/* Dark mode Button */}
-        <button
-          onClick={toggleDarkMode}
-          className="
-          p-2 rounded-full bg-white/20 
-          dark:bg-black/30 text-indigo-900 
-          dark:text-white hover:scale-110 transition
-          "
-        >
-          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        <ThemeToggle />
 
-        {/* Menu Button */}
         <button onClick={() => setOpen(!isOpen)} className="p-2 text-white">
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M12 12h8M4 18h16"
-            />
+          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M4 6h16M12 12h8M4 18h16" />
           </svg>
         </button>
       </div>
@@ -162,29 +63,16 @@ const Navbar = () => {
       )}
 
       {/* Mobile Menu */}
-      <div
-        className={`absolute top-24 left-1/2 -translate-x-1/2 w-[92%] lg:hidden
+      <div className={`absolute top-24 left-1/2 -translate-x-1/2 w-[92%] lg:hidden
         bg-linear-to-br from-fuchsia-300/90 via-rose-400/90 to-purple-500/90
         backdrop-blur-3xl border border-white/90
         rounded-3xl p-8 shadow-2xl space-y-6
         transition-all duration-300 origin-top
-        ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}
-      >
-        {navLinks.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            onClick={() => setOpen(false)}
-            className="
-            block text-xl font-bold 
-            text-indigo-950 dark:text-white 
-            hover:text-fuchsia-300 dark:hover:text-blue-600 
-            transition text-center
-            "
-          >
-            {link.label}
-          </a>
-        ))}
+        ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+
+        <div className="flex flex-col gap-6 text-center text-xl font-bold">
+          <NavLinks onClick={() => setOpen(false)} />
+        </div>
 
         <a
           href="/CV.pdf"
@@ -206,5 +94,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}; 
+
 export default Navbar;
