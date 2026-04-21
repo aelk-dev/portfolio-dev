@@ -24,7 +24,7 @@ const useActiveSection = (sectionIds) => {
 
     window.addEventListener("scroll", handleScroll);
 
-    handleScroll(); 
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionIds]);
