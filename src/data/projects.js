@@ -3,7 +3,7 @@ export const projects = [
     title: "Portfolio Website",
     description:
       "Modern full-stack portfolio with animations and responsive design.",
-    tech: ["React", "Tailwind", "Framer Motion"],
+    tech: ["Javascript", "React", "TailwindCSS", "Framer Motion"],
     github: "#",
     demo: "#",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Full Stack App",
     description:
       "Application with authentication, API integration and database.",
-    tech: ["React", "Node.js", "PostgreSQL"],
+    tech: ["none"],
     github: "#",
     demo: "#",
   },

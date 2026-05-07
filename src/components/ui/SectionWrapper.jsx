@@ -6,7 +6,7 @@ const SectionWrapper = ({ children, id }) => {
       id={id}
       initial={{ opacity: 0, y: 100, scale: 0.96, filter: "blur(12px)" }}
       whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-      transition={{ duration: 0.9, ease: "easeOut" }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
       viewport={{ once: false, margin: "-120px" }}
       className="
         relative

@@ -13,7 +13,7 @@ const ContactInfo = () => {
 
       <div className="space-y-4">
         <a
-          href="https://github.com/Mani-tech7"
+          href="https://github.com/aelk-dev"
           target="_blank"
           className="flex items-center gap-3"
         >

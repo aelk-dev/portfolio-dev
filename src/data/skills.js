@@ -1,11 +1,20 @@
 export const skills = [
   {
     category: "Languages",
-    items: ["Java", "C", "C#", "Python", "JavaScript", "TypeScript", "Dart"],
+    items: [
+      "Java",
+      "C",
+      "C#",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "Dart",
+    ],
   },
   {
     category: "Frontend",
-    items: ["React", "Angular", "Flutter", "Tailwind"],
+    items: ["React", "Angular", "Flutter", "Tailwind", "Bootstrap"],
   },
   {
     category: "Backend",
@@ -14,9 +23,11 @@ export const skills = [
   {
     category: "Data & APIs",
     items: [
+      "SQL",
       "PostgreSQL",
       "MongoDB",
       "Prisma ORM",
+      "Django ORM",
       "GraphQL",
       "REST API",
       "OpenAPI",
@@ -27,8 +38,6 @@ export const skills = [
     items: [
       "Docker",
       "CI/CD",
-      "Terraform",
-      "Ansible",
       "GitHub",
       "GitLab",
       "Maven",
@@ -37,6 +46,8 @@ export const skills = [
       "Linux",
       "Bash",
       "Cybersecurity",
+      "Terraform",
+      "Ansible",
     ],
   },
 ];
