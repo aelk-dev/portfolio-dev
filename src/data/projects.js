@@ -4,8 +4,8 @@ export const projects = [
     description:
       "Modern full-stack portfolio with animations and responsive design.",
     tech: ["Javascript", "React", "TailwindCSS", "Framer Motion"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/aelk-dev/portfolio-dev",
+    demo: "http://foliodev-aya.netlify.app/",
   },
   {
     title: "Full Stack App",
