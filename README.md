@@ -53,21 +53,29 @@ npm install
 npm run dev
 ```
 
+---
+
 ## Create a .env file in the root directory:
 
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
+- VITE_EMAILJS_SERVICE_ID=your_service_id
+- VITE_EMAILJS_TEMPLATE_ID=your_template_id
+- VITE_EMAILJS_PUBLIC_KEY=your_public_key
+
+---
 
 ## website screen
 
 ![Portfolio Screenshot](src/assets/image.png)
 
+---
+
 ## Author
 
-Name: Aya
-GitHub: https://github.com/aelk-dev
-Portfolio: https://foliodev-aya.netlify.app/
+- Name: Aya
+- GitHub: https://github.com/aelk-dev
+- Portfolio: https://foliodev-aya.netlify.app/
+
+---
 
 ## License
 
