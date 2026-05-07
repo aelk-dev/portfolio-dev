@@ -72,7 +72,7 @@ npm run dev
 ## Author
 
 - Name: Aya
-- GitHub: https://github.com/aelk-dev
+- GitHub: https://github.com/aelk-dev/portfolio-dev
 - Portfolio: https://foliodev-aya.netlify.app/
 
 ---
