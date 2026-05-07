@@ -41,7 +41,7 @@ const ContactForm = () => {
       <input
         type="text"
         name="user_name"
-        placeholder="Your Name"
+        placeholder="Full Name"
         required
         className="w-full p-3 rounded-lg bg-transparent border border-white/20"
       />
@@ -49,14 +49,14 @@ const ContactForm = () => {
       <input
         type="email"
         name="user_email"
-        placeholder="Your Email"
+        placeholder="Email"
         required
         className="w-full p-3 rounded-lg bg-transparent border border-white/20"
       />
 
       <textarea
         name="message"
-        placeholder="Your Message"
+        placeholder="Message"
         required
         className="w-full p-3 rounded-lg bg-transparent border border-white/20"
       />

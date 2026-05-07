@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import { contacts } from "../../../data/contacts";
 
 const ContactInfo = () => {
   return (
@@ -12,29 +12,28 @@ const ContactInfo = () => {
       </p>
 
       <div className="space-y-4">
-        <a
-          href="https://github.com/aelk-dev"
-          target="_blank"
-          className="flex items-center gap-3"
-        >
-          <FaGithub /> GitHub
-        </a>
+        {contacts.map((item, index) => {
+          const Icon = item.icon;
+          const isExternal = item.href.startsWith("http");
 
-        <a
-          href="https://www.linkedin.com/in/aya-el-hakkouni-5659ba257"
-          target="_blank"
-          className="flex items-center gap-3"
-        >
-          <FaLinkedin /> LinkedIn
-        </a>
-
-        <div className="flex items-center gap-3">
-          <FaEnvelope /> ayaelhakkounii@gmail.com
-        </div>
-
-        <div className="flex items-center gap-3">
-          <FaPhone /> +32 488 18 66 20
-        </div>
+          return (
+            <a
+              key={index}
+              href={item.href}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              aria-label={item.ariaLabel}
+              className="
+                flex items-center gap-3
+                transition-colors duration-300
+                hover:text-fuchsia-500
+              "
+            >
+              <Icon className="text-lg" />
+              <span>{item.label}</span>
+            </a>
+          );
+        })}
       </div>
     </div>
   );

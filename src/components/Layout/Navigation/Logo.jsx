@@ -4,7 +4,8 @@ import logo from "../../../assets/icons8-hibiscus-64.png";
 const Logo = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-3">
-      <Link to="/" className="flex items-center space-x-3 group">
+      <a href="#" className="flex items-center space-x-3 group">
+        {" "}
         <div
           className="
           w-14 h-14 rounded-xl 
@@ -24,7 +25,6 @@ const Logo = () => {
             "
           />
         </div>
-
         <span
           className="
           text-2xl font-bold bg-linear-to-r 
@@ -34,7 +34,7 @@ const Logo = () => {
         >
           FolioDev<span className="text-orange-600">.</span>
         </span>
-      </Link>
+      </a>
     </div>
   );
 };
