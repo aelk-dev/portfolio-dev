@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio - React + Vite + TailwindCSS
+# 🌐 Portfolio - React + Vite + TailwindCSS
 
 This is my personal developer portfolio built to showcase my projects, skills, and experience as a full-stack developer.
 
