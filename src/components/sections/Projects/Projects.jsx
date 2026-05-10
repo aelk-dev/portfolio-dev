@@ -10,7 +10,7 @@ const Projects = () => {
         </h2>
 
         <p className="text-center text-indigo-900/70 dark:text-white/70 max-w-2xl mx-auto">
-          A selection of projects showcasing my full-stack development skills.
+          A selection of projects showcasing my development skills.
         </p>
 
         <ProjectsGrid />

@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Portfolio Website",
+    title: "FolioDev.",
     description: "Modern portfolio with animations and responsive design.",
     tech: ["Javascript", "React", "TailwindCSS", "Framer Motion"],
     github: "https://github.com/aelk-dev/portfolio-dev",

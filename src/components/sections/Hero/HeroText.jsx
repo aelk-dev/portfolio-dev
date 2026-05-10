@@ -17,9 +17,14 @@ const HeroText = () => {
         </span>
       </h1>
 
-      <p className="mt-4 text-lg text-indigo-900/80 dark:text-white/80 max-w-md">
-        Full-stack developer focused on building modern, scalable and reliable
-        applications.
+      <p className="mt-4 text-lg text-indigo-900 dark:text-white max-w-md bold">
+        Full-Stack Developer passionate about building reliable and useful
+        solutions.
+      </p>
+
+      <p className="mt-4 text-lg text-indigo-900/50 dark:text-white/50 max-w-md">
+        I turn real-world problems and ideas into innovative, clear,
+        maintainable solutions designed with users in mind.
       </p>
     </>
   );

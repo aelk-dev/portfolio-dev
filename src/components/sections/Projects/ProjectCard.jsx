@@ -17,10 +17,10 @@ const ProjectCard = ({ project, index }) => {
     >
       <div
         className="
-        absolute inset-0 opacity-0 group-hover:opacity-100
-        bg-linear-to-br from-fuchsia-500/20 to-purple-500/20
-        transition duration-500
-      "
+          absolute inset-0 opacity-0 group-hover:opacity-100
+          bg-linear-to-br from-fuchsia-500/20 to-purple-500/20
+          transition duration-500
+        "
       />
 
       <div className="relative z-10 space-y-4">
@@ -30,7 +30,6 @@ const ProjectCard = ({ project, index }) => {
           {project.description}
         </p>
 
-        {/* Tech stack */}
         <div className="flex flex-wrap gap-2">
           {project.tech.map((tech, i) => (
             <span
@@ -42,19 +41,33 @@ const ProjectCard = ({ project, index }) => {
           ))}
         </div>
 
-        {/* Buttons */}
-        <div className="flex gap-3 pt-2">
+        <div className="flex gap-3 pt-3">
           <a
             href={project.github}
-            className="text-sm font-semibold hover:text-fuchsia-400"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              px-4 py-2 text-sm font-semibold rounded-xl
+              bg-black/80 text-white
+              hover:bg-black
+              transition
+            "
           >
             GitHub
           </a>
+
           <a
             href={project.demo}
-            className="text-sm font-semibold hover:text-fuchsia-400"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              px-4 py-2 text-sm font-semibold rounded-xl
+              bg-fuchsia-500 text-white
+              hover:bg-fuchsia-600
+              transition
+            "
           >
-            Live
+            Live Demo
           </a>
         </div>
       </div>
