@@ -81,5 +81,5 @@ npm run dev
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project, as long as you include a link back to this repository.
 
-* Read more about the MIT License
-https://choosealicense.com/licenses/mit/
+- Read more about the MIT License
+  https://choosealicense.com/licenses/mit/

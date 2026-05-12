@@ -28,7 +28,7 @@ const Navbar = () => {
         <ThemeToggle />
 
         <a
-          href="/CV.pdf"
+          href="/Aya_ElHakkouni_CV_FE_.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href="/CV.pdf"
+          href="/Aya_ElHakkouni_CV_FE_.pdf"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
