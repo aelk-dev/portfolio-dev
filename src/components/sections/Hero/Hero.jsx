@@ -1,6 +1,7 @@
 import HeroText from "./HeroText";
 import HeroButtons from "./HeroButtons";
-import HeroVisual from "./HeroVisual";
+import HeroImage from "./HeroImage";
+//import HeroVisual from "./HeroVisual";
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
           <HeroButtons />
         </div>
 
-        <HeroVisual />
+        <HeroImage />
       </div>
     </section>
   );
