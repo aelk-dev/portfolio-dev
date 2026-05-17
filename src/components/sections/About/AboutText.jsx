@@ -7,91 +7,183 @@ const aboutSections = [
     title: "Who I Am",
     content: (
       <>
-        I am a <strong>Full-Stack Developer</strong> who enjoys understanding
-        problems, transforming ideas into concrete solutions, and building
-        useful applications. For me, development is not only about writing code,
-        but about understanding needs, identifying friction points, and creating
-        clear, maintainable, and impactful solutions.
-      </>
-    ),
-  },
-  {
-    title: "Education & Foundation",
-    content: (
-      <>
-        Throughout my studies at the{" "}
-        <strong>Haute École Léonard de Vinci</strong>, as well as through
-        academic and professional experiences, I developed a versatile approach
-        to software development — from UI design and backend logic to databases,
-        automated testing, and technical environments.
-      </>
-    ),
-  },
-  {
-    title: "Professional Experience",
-    content: (
-      <>
-        During my internship at <strong>Opal Solutions</strong>, I worked on
-        real-world challenges related to access security and application
-        reliability. I contributed to the digitization of an IP-based access
-        management system by building a centralized solution that reduced the
-        complexity of managing IP changes, improved system coordination through
-        data synchronization, and automated key operational processes.
+        I am a{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          Full-Stack Developer
+        </strong>{" "}
+        who enjoys understanding problems, transforming ideas into concrete
+        solutions, and building useful applications. For me, development is not
+        only about writing code, but about understanding needs, identifying
+        friction points, and creating clear, maintainable, and impactful
+        solutions.
         <br />
-        <br />I also helped restore and enhance automated testing after a{" "}
-        <strong>Docker</strong> migration by refactoring{" "}
-        <strong>Cypress</strong> tests and proposing a more sustainable testing
-        approach. This work improved the reliability of the test suite, reduced
-        manual intervention, and made the testing process more stable and
-        maintainable over time.
-      </>
-    ),
-  },
-  {
-    title: "Academic Experience",
-    content: (
-      <>
-        One of the most significant experiences in my academic journey was my
-        final year project, carried out in collaboration with the company{" "}
-        <strong>BetterBusiness</strong>,
-        <br />
-        This project gave me the opportunity to work on a real-world business
-        problem and contribute to building a system capable of evaluating and
-        awarding quality labels to companies based on structured criteria. It
-        allowed me to go beyond implementation and focus on delivering a
-        solution that is meaningful, reliable, and usable in a real context.
-        <br />
-        <br />
-        During my <strong>final year project</strong>, I explored technologies
-        such as <strong>Python</strong> and <strong>Django ORM</strong>, working
-        on business logic, score calculations, visual reporting with charts, and
-        designing a smooth and user-friendly interface. My contribution helped
-        make the evaluation process more structured, transparent, and easier to
-        interpret for users through clear scoring rules and visual insights.
-        <br />
-        <br />
-        Overall, this project strengthened my ability to transform complex
-        requirements into a complete application, combining backend logic, data
-        processing, and user experience to deliver a functional and coherent
-        product.
-        <br />
-        <br />
-        For more information, please feel free to contact me
-      </>
-    ),
-  },
-  {
-    title: "Mindset",
-    content: (
-      <>
-        I particularly enjoy environments where I can{" "}
-        <strong>
+        <br />I particularly enjoy environments where I can{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
           solve real problems, transform ideas into innovative solutions, and
           learn quickly
         </strong>
         . Curious, adaptable, and solution-oriented, I enjoy contributing to
         projects with a global vision, always keeping maintainability, user
         experience, and real product impact in mind.
+      </>
+    ),
+  },
+  {
+    title: "What I’m Looking For",
+    content: (
+      <>
+        I’m looking for a{" "}
+        <strong className="font-bold text-purple-500">
+          Full-Stack Developer position
+        </strong>
+        , with a strong focus on{" "}
+        <strong className="font-bold text-purple-500">
+          backend development
+        </strong>
+        , where I can contribute to{" "}
+        <strong className="font-bold text-purple-500">
+          meaningful projects
+        </strong>
+        , collaborate with{" "}
+        <strong className="font-bold text-purple-500">talented teams</strong>,
+        and continue growing{" "}
+        <strong className="font-bold text-purple-500">
+          technically and creatively
+        </strong>
+        . Explore my portfolio to see how I approach problems and build
+        solutions !
+      </>
+    ),
+  },
+  {
+    title: "Professional Journey",
+    content: (
+      <>
+        Through my internship at{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          Opal Solutions
+        </strong>{" "}
+        and various{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          academic projects
+        </strong>
+        , I’ve had the chance to work on{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          real-world
+        </strong>{" "}
+        applications, from backend systems and databases to frontend interfaces
+        and automated testing. I like being involved in the full process of a
+        product: understanding the problem, designing the solution, and making
+        it work smoothly in production.
+      </>
+    ),
+  },
+  {
+    title: "Key Projects",
+    content: (
+      <>
+        •{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          FolioDev Portfolio
+        </strong>
+        <br />
+        My personal project to showcase my work, designed to be modern,
+        responsive, and clear, giving visitors an inside look at my skills and
+        approach.
+        <br />
+        <br />•{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          IP Access Management System (Opal Solutions)
+        </strong>
+        <br />
+        I simplified a complex system for managing internal and external access
+        rights. Previously, everything was manual and difficult to manage. I
+        implemented an automated system with a cron job and bidirectional
+        synchronization, creating a secure and reliable workflow that made
+        updates faster and reduced the risk of errors.
+        <br />
+        <br />•{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          Automated Testing System Improvement (Opal Solutions)
+        </strong>
+        <br />
+        During a technical migration to Docker, the company’s automated testing
+        system stopped working properly, making it harder to detect issues early
+        in development. I restored and improved the testing framework, ensuring
+        tests could run smoothly again and helping the team identify bugs faster
+        and maintain code quality.
+        <br />
+        <br />•{" "}
+        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
+          BetterBusiness Evaluation Platform (Academic project)
+        </strong>
+        <br />
+        I helped build an automated scoring system for companies, including
+        interactive visualizations and features for contract management, making
+        the platform intuitive and efficient.
+        <br />
+        <br />
+      </>
+    ),
+  },
+  {
+    title: "My Skills",
+    content: (
+      <>
+        I mainly focus on{" "}
+        <strong className="font-bold text-purple-500">
+          backend development
+        </strong>
+        , while also enjoying frontend development and automated testing. Over
+        time, I’ve worked with a wide range of technologies, but the tools I
+        feel the most confident working with today include:
+        <br />
+        <br />
+        <strong className="font-bold text-purple-500">Java</strong> •{" "}
+        <strong className="font-bold text-purple-500">Spring Boot</strong> •{" "}
+        <strong className="font-bold text-purple-500">TypeScript</strong> •{" "}
+        <strong className="font-bold text-purple-500">Node.js</strong> •{" "}
+        <strong className="font-bold text-purple-500">Express.js</strong> •{" "}
+        <strong className="font-bold text-purple-500">React</strong> •{" "}
+        <strong className="font-bold text-purple-500">PostgreSQL</strong> •{" "}
+        <strong className="font-bold text-purple-500">Docker</strong> •{" "}
+        <strong className="font-bold text-purple-500">Cypress</strong> •{" "}
+        <strong className="font-bold text-purple-500">OpenAPI</strong> •{" "}
+        <strong className="font-bold text-purple-500">REST APIs</strong>
+        <br />
+        <br />
+        To explore the full range of technologies I’ve learned and used
+        throughout my journey, feel free to check out the{" "}
+        <a
+          href="#skills"
+          className="
+          font-bold text-purple-500
+          hover:text-fuchsia-400
+          transition-colors
+          underline underline-offset-4
+        "
+        >
+          Tech Stack
+        </a>{" "}
+        section below.
+      </>
+    ),
+  },
+  {
+    title: "Who I Am Beyond Coding",
+    content: (
+      <>
+        Outside of programming, I enjoy{" "}
+        <strong className="font-bold text-purple-500">swimming</strong>,{" "}
+        <strong className="font-bold text-purple-500">boxing</strong>,{" "}
+        <strong className="font-bold text-purple-500">rollerblading</strong>,
+        and challenging myself with{" "}
+        <strong className="font-bold text-purple-500">chess</strong>. These
+        hobbies reflect my{" "}
+        <strong className="font-bold text-purple-500">discipline</strong>,{" "}
+        <strong className="font-bold text-purple-500">curiosity</strong>, and{" "}
+        <strong className="font-bold text-purple-500">drive</strong>. Qualities
+        I bring to my work as a developer.
       </>
     ),
   },
