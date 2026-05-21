@@ -1,9 +1,33 @@
+// ✅ VERSION OPTIMALE
 import { useState } from "react";
 import { Download } from "lucide-react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import ThemeToggle from "./ThemeToggle";
 import useActiveSection from "../../../hooks/useActiveSection";
+
+const RESUME_URL = "/Aya_ElHakkouni_CV_FE_.pdf";
+
+// Composant réutilisable pour le bouton CV
+const ResumeButton = ({ className = "", variant = "desktop" }) => (
+  <a
+    href={RESUME_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`
+      flex items-center gap-2
+      bg-indigo-800 text-white 
+      font-black uppercase whitespace-nowrap transition-all 
+      shadow-xl hover:scale-105 active:scale-95 
+      shadow-indigo-900/20 hover:-translate-y-0.5
+      ${variant === "desktop" ? "px-6 py-3 h-10 rounded-full text-xs" : "w-full py-4 rounded-2xl text-lg"}
+      ${className}
+    `}
+  >
+    <Download size={variant === "desktop" ? 16 : 18} />
+    Resume
+  </a>
+);
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -24,33 +48,18 @@ const Navbar = () => {
       {/* Desktop */}
       <div className="hidden lg:flex items-center gap-6 lg:gap-10 text-sm font-bold uppercase tracking-widest -ml-9">
         <NavLinks activeSection={activeSection} />
-
         <ThemeToggle />
-
-        <a
-          href="/Aya_ElHakkouni_CV_FE_.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-          flex items-center gap-2
-          bg-indigo-800 text-white 
-          px-6 py-3 h-10 rounded-full 
-          text-xs font-black uppercase 
-          whitespace-nowrap transition-all 
-          shadow-xl hover:scale-105 active:scale-95 
-          shadow-indigo-900/20 hover:-translate-y-0.5
-          "
-        >
-          <Download size={16} />
-          Resume
-        </a>
+        <ResumeButton variant="desktop" />
       </div>
 
       {/* Mobile */}
       <div className="lg:hidden flex items-center gap-3">
         <ThemeToggle />
-
-        <button onClick={() => setOpen(!isOpen)} className="p-2 text-white">
+        <button
+          onClick={() => setOpen(!isOpen)}
+          className="p-2 text-white hover:bg-white/20 rounded-lg transition"
+          aria-label="Toggle menu"
+        >
           <svg
             className="h-6 w-6"
             fill="none"
@@ -91,23 +100,7 @@ const Navbar = () => {
           />
         </div>
 
-        <a
-          href="/Aya_ElHakkouni_CV_FE_.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => setOpen(false)}
-          className="
-          flex items-center justify-center gap-2
-          w-full text-center 
-          bg-indigo-900/90 text-white py-4 
-          rounded-2xl font-black text-lg shadow-xl 
-          hover:scale-105 active:scale-95 
-          transition border border-white/10
-          "
-        >
-          <Download size={18} />
-          Resume
-        </a>
+        <ResumeButton variant="mobile" onClick={() => setOpen(false)} />
       </div>
     </nav>
   );

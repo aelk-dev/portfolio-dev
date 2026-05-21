@@ -31,9 +31,9 @@ const ProjectCard = ({ project, index }) => {
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {project.tech.map((tech, i) => (
+          {project.tech.map((tech) => (
             <span
-              key={i}
+              key={tech}
               className="text-xs px-2 py-1 bg-white/20 rounded-full"
             >
               {tech}
@@ -42,33 +42,37 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className="flex gap-3 pt-3">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              px-4 py-2 text-sm font-semibold rounded-xl
-              bg-black/80 text-white
-              hover:bg-black
-              transition
-            "
-          >
-            GitHub
-          </a>
+          {project.github && project.github !== "/" && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-4 py-2 text-sm font-semibold rounded-xl
+                bg-black/80 text-white
+                hover:bg-black
+                transition
+              "
+            >
+              GitHub
+            </a>
+          )}
 
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              px-4 py-2 text-sm font-semibold rounded-xl
-              bg-fuchsia-500 text-white
-              hover:bg-fuchsia-600
-              transition
-            "
-          >
-            Live Demo
-          </a>
+          {project.demo && project.demo !== "/" && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                px-4 py-2 text-sm font-semibold rounded-xl
+                bg-fuchsia-500 text-white
+                hover:bg-fuchsia-600
+                transition
+              "
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

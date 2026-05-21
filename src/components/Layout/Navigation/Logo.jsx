@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import logo from "../../../assets/icons8-hibiscus-64.png";
 
 const Logo = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-3">
-      <a href="#" className="flex items-center space-x-3 group">
+      <a href="#home" className="flex items-center space-x-3 group">
         {" "}
         <div
           className="

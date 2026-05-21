@@ -6,23 +6,27 @@ export const contacts = [
     label: "GitHub",
     href: "https://github.com/aelk-dev",
     ariaLabel: "GitHub profile",
+    external: true,
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/aya-el-hakkouni-5659ba257",
     ariaLabel: "LinkedIn profile",
+    external: true,
   },
   {
     icon: FaEnvelope,
     label: "ayaelhakkounii@gmail.com",
     href: "mailto:ayaelhakkounii@gmail.com",
     ariaLabel: "Send email",
+    external: false,
   },
   {
     icon: FaPhone,
     label: "+32 488 18 66 20",
     href: "tel:+32488186620",
     ariaLabel: "Call phone number",
+    external: false,
   },
 ];

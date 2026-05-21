@@ -12,16 +12,15 @@ const ContactInfo = () => {
       </p>
 
       <div className="space-y-4">
-        {contacts.map((item, index) => {
+        {contacts.map((item) => {
           const Icon = item.icon;
-          const isExternal = item.href.startsWith("http");
 
           return (
             <a
-              key={index}
+              key={item.label}
               href={item.href}
-              target={isExternal ? "_blank" : undefined}
-              rel={isExternal ? "noopener noreferrer" : undefined}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
               aria-label={item.ariaLabel}
               className="
                 flex items-center gap-3

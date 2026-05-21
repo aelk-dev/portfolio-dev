@@ -1,18 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 const useActiveSection = (sectionIds) => {
   const [active, setActive] = useState("");
 
-  useEffect(() => {
-    const handleScroll = () => {
+  const handleScroll = useMemo(() => {
+    return () => {
       let current = "";
 
       sectionIds.forEach((id) => {
         const section = document.getElementById(id);
-
         if (section) {
           const rect = section.getBoundingClientRect();
-
           if (rect.top <= 150 && rect.bottom >= 150) {
             current = id;
           }
@@ -21,13 +19,14 @@ const useActiveSection = (sectionIds) => {
 
       setActive(current);
     };
+  }, [sectionIds]);
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [sectionIds]);
+  }, [handleScroll]);
 
   return active;
 };

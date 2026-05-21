@@ -50,31 +50,47 @@ const aboutSections = [
         <strong className="font-bold text-purple-500">
           technically and creatively
         </strong>
-        . Explore my portfolio to see how I approach problems and build
-        solutions !
-      </>
-    ),
-  },
-  {
-    title: "Professional Journey",
-    content: (
-      <>
-        Through my internship at{" "}
-        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
-          Opal Solutions
-        </strong>{" "}
-        and various{" "}
-        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
-          academic projects
+        .
+        <br />
+        <br />
+        I’m particularly comfortable working with{" "}
+        <strong className="font-bold text-purple-500">Java</strong>,{" "}
+        <strong className="font-bold text-purple-500">TypeScript</strong>,{" "}
+        <strong className="font-bold text-purple-500">Node.js</strong>,{" "}
+        <strong className="font-bold text-purple-500">React</strong>,{" "}
+        <strong className="font-bold text-purple-500">PostgreSQL</strong>,{" "}
+        <strong className="font-bold text-purple-500">JUnit</strong>,{" "}
+        <strong className="font-bold text-purple-500">Postman</strong> and{" "}
+        <strong className="font-bold text-purple-500">Cypress</strong>
+        .
+        <br />
+        <br />
+        I’m a{" "}
+        <strong className="font-bold text-purple-500">
+          fast learner
+        </strong>,{" "}
+        <strong className="font-bold text-purple-500">adaptable</strong>, and{" "}
+        <strong className="font-bold text-purple-500">versatile</strong> when it
+        comes to learning and working with new technologies. Feel free to
+        explore my{" "}
+        <a
+          href="#skills"
+          className="
+    font-bold text-purple-500
+    hover:text-fuchsia-400
+    transition-colors
+    underline underline-offset-4
+  "
+        >
+          Tech Stack
+        </a>{" "}
+        to discover the full range of technologies I’ve had the opportunity to
+        experiment with throughout my{" "}
+        <strong className="font-bold text-purple-500">academic</strong> and{" "}
+        <strong className="font-bold text-purple-500">
+          professional journey
         </strong>
-        , I’ve had the chance to work on{" "}
-        <strong className="font-bold bg-clip-text bg-linear-to-r text-purple-500">
-          real-world
-        </strong>{" "}
-        applications, from backend systems and databases to frontend interfaces
-        and automated testing. I like being involved in the full process of a
-        product: understanding the problem, designing the solution, and making
-        it work smoothly in production.
+        .
       </>
     ),
   },
@@ -123,49 +139,6 @@ const aboutSections = [
         the platform intuitive and efficient.
         <br />
         <br />
-      </>
-    ),
-  },
-  {
-    title: "My Skills",
-    content: (
-      <>
-        I mainly focus on{" "}
-        <strong className="font-bold text-purple-500">
-          backend development
-        </strong>
-        , while also enjoying frontend development and automated testing. Over
-        time, I’ve worked with a wide range of technologies, but the tools I
-        feel the most confident working with today include:
-        <br />
-        <br />
-        <strong className="font-bold text-purple-500">Java</strong> •{" "}
-        <strong className="font-bold text-purple-500">Spring Boot</strong> •{" "}
-        <strong className="font-bold text-purple-500">TypeScript</strong> •{" "}
-        <strong className="font-bold text-purple-500">Node.js</strong> •{" "}
-        <strong className="font-bold text-purple-500">Express.js</strong> •{" "}
-        <strong className="font-bold text-purple-500">React</strong> •{" "}
-        <strong className="font-bold text-purple-500">PostgreSQL</strong> •{" "}
-        <strong className="font-bold text-purple-500">Docker</strong> •{" "}
-        <strong className="font-bold text-purple-500">Cypress</strong> •{" "}
-        <strong className="font-bold text-purple-500">OpenAPI</strong> •{" "}
-        <strong className="font-bold text-purple-500">REST APIs</strong>
-        <br />
-        <br />
-        To explore the full range of technologies I’ve learned and used
-        throughout my journey, feel free to check out the{" "}
-        <a
-          href="#skills"
-          className="
-          font-bold text-purple-500
-          hover:text-fuchsia-400
-          transition-colors
-          underline underline-offset-4
-        "
-        >
-          Tech Stack
-        </a>{" "}
-        section below.
       </>
     ),
   },
