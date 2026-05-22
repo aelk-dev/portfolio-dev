@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useLayoutEffect, useState, useMemo, useRef } from "react";
 
 const useActiveSection = (sectionIds) => {
   const [active, setActive] = useState("");
@@ -21,9 +21,15 @@ const useActiveSection = (sectionIds) => {
     };
   }, [sectionIds]);
 
-  useEffect(() => {
+  const isFirstRender = useRef(true);
+
+  useLayoutEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
+
+    if (isFirstRender.current) {
+      handleScroll();
+      isFirstRender.current = false;
+    }
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);

@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
-  const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_DEV;
+  const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
   const sendEmail = async (e) => {
@@ -35,7 +35,11 @@ const ContactForm = () => {
       onSubmit={sendEmail}
       className="p-6 rounded-3xl bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl space-y-4"
     >
+      <label htmlFor="user_name" className="block text-sm font-semibold mb-2">
+        Full Name
+      </label>
       <input
+        id="user_name"
         type="text"
         name="user_name"
         placeholder="Full Name"
@@ -44,7 +48,11 @@ const ContactForm = () => {
         className="w-full p-3 rounded-lg bg-transparent border border-white/20 focus:border-fuchsia-400 focus:outline-none transition disabled:opacity-50"
       />
 
+      <label htmlFor="user_email" className="block text-sm font-semibold mb-2">
+        Email
+      </label>
       <input
+        id="user_email"
         type="email"
         name="user_email"
         placeholder="Email"
@@ -53,7 +61,11 @@ const ContactForm = () => {
         className="w-full p-3 rounded-lg bg-transparent border border-white/20 focus:border-fuchsia-400 focus:outline-none transition disabled:opacity-50"
       />
 
+      <label htmlFor="message" className="block text-sm font-semibold mb-2">
+        Message
+      </label>
       <textarea
+        id="message"
         name="message"
         placeholder="Message"
         required

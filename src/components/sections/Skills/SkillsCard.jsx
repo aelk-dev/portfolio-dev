@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const SkillCard = ({ group, index }) => {
@@ -18,9 +19,9 @@ const SkillCard = ({ group, index }) => {
       <h3 className="text-xl font-bold mb-5">{group.category}</h3>
 
       <div className="flex flex-wrap gap-2">
-        {group.items.map((item, i) => (
+        {group.items.map((item) => (
           <span
-            key={i}
+            key={item}
             className="
               px-3 py-1 text-sm rounded-full
               bg-white/20 dark:bg-white/10
