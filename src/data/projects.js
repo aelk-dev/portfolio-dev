@@ -13,17 +13,17 @@ export const projects = [
     description:
       "A complete job tracking platform allowing users to log applications, monitor status updates, and streamline their job search workflow with a clean and efficient interface.",
     tech: [
-      "TypScript",
-      "Next.js",
-      "Bootstrap",
       "Java",
       "Spring Boot",
+      "TypScript",
+      "React.js",
+      "TailwindCSS",
       "PostgresSQL",
-      "Jest",
+      "JUnit",
       "Playwright",
       "Docker/Docker-compose",
     ],
-    github: "/",
+    github: "https://github.com/aelk-dev/Jeyowbie",
     demo: "/",
   },
 ];
